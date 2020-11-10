@@ -6,7 +6,10 @@ namespace Challenge
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var challenge = new Challenge();
+            var sentence = "The quick brown fox jumps over the lazy dog";
+            var vowelCount = challenge.NumberOfVowels(sentence);
+            Console.WriteLine($"The Number of vowels in the sentence  \"{ sentence.ToUpper()}\" is {vowelCount} ");
         }
     }
 }
